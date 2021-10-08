@@ -1,18 +1,17 @@
 
-const km = prompt("Quanti km desideri fare?");
+const km = parseInt(prompt("Quanti km desideri fare?"));
 console.log("n di kilometri " + km);
 
 if (isNaN(km)) {
     alert("I Km inseriti non sono validi. Utilizza solo numeri ");
 }
 
-const etaPasseggero = prompt("Quanti anni hai?");
+const etaPasseggero = parseInt(prompt("Quanti anni hai?"));
 console.log("età " + etaPasseggero);
 
 if (isNaN(etaPasseggero)) {
     alert("La tua età non è valida. Inseriscila utilizzando soltanto numeri");
 }
-
 
 let costoBiglietto = km * 0.21;
 costoBiglietto = costoBiglietto.toFixed(2);
